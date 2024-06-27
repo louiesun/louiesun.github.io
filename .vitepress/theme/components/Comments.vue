@@ -4,6 +4,7 @@
 <script lang="ts" setup>
 import "gitalk/dist/gitalk.css";
 import Gitalk from "gitalk";
+import {Md5} from 'ts-md5';
 import { onContentUpdated, useRouter } from "vitepress";
 
 // const { route, go } = useRouter();
@@ -14,6 +15,7 @@ function deleteChild(element: HTMLDivElement | null) {
     child = element?.lastElementChild;
   }
 }
+
 onContentUpdated(() => {
   // reset gittalk element for update
   const element = document.querySelector("#gitalk-container");
@@ -22,12 +24,12 @@ onContentUpdated(() => {
   }
   deleteChild(element);
   const gitalk = new Gitalk({
-    clientID: "a8430bf8a0464113ee24",
-    clientSecret: "df4cbf03c4ceca8a39076e6b7a0fb878e55534e2",
-    repo: "blog-comments",
-    owner: "clark-cui",
-    admin: ["clark-cui"],
-    id: location.pathname.substring(0, 50), // Ensure uniqueness and length less than 50
+    clientID: "Ov23ctu9tK2Jjv9Clc81",
+    clientSecret: "110c9f51727015b925d084876ecfbda28a4b0074",
+    repo: "BlogComments",
+    owner: "louiesun",
+    admin: ["louiesun"],
+    id: Md5.hashStr(location.href), // Ensure uniqueness and length less than 50
     language: "zh-CN",
     distractionFreeMode: true, // Facebook-like distraction free mode
   });
