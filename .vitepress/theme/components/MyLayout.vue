@@ -11,6 +11,7 @@
         <button @click="back">Back</button>
       </div>
       <Comments />
+      <CopyWright />
     </template>
     <!-- Home slot-->
     <template #home-hero-before>
@@ -18,10 +19,9 @@
     </template>
     <template #home-features-after>
       <Page />
+      <CopyWright />
     </template>
   </Layout>
-  <!-- copywright -->
-  <CopyWright />
 </template>
 <script lang="ts" setup>
 import DefaultTheme from "vitepress/theme";
