@@ -92,6 +92,7 @@ export default {
 
 .card-body {
     padding: 15px;
+    height: 100px;
 }
 
 .card-body h3 {
@@ -105,5 +106,10 @@ export default {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    bottom: 0;
+    display:block;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 0px;
 }
 </style>
