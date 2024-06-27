@@ -1,0 +1,41 @@
+{
+  "name": "louiesun.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "clark-cui <cuirongchuan@163.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@mdit/plugin-img-size": "^0.12.0",
+    "@shikijs/vitepress-twoslash": "^1.6.1",
+    "dayjs": "^1.11.10",
+    "fast-glob": "^3.3.2",
+    "feed": "^4.2.2",
+    "fs-extra": "^11.2.0",
+    "globby": "14.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.0.1",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-multimd-table": "^4.2.3",
+    "shiki": "^1.6.1",
+    "vitepress": "1.2.2"
+  },
+  "scripts": {
+    "dev": "vitepress dev ",
+    "build": "vitepress build ",
+    "serve": "vitepress serve "
+  },
+  "dependencies": {
+    "gitalk": "^1.8.0",
+    "vite-plugin-vitepress-auto-sidebar": "^1.6.5"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "search-insights"
+      ]
+    }
+  }
+}

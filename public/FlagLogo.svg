@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" clip-rule="evenodd" fill-rule="nonezero">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol height="329" id="svg_74" width="420" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+   <defs>
+    <symbol id="svg_66" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+     <defs>
+      <path d="m-0.6,0.8l0.6,-1.8l0.6,1.8l-1.6,-1.1l2,0l-1.6,1.1z" fill="#ff0" id="svg_68"/>
+     </defs>
+     <path d="m0,0l640,0l0,480l-640,0l0,-480z" fill="#ee1c25" id="svg_73"/>
+     <use height="20" id="svg_72" transform="matrix(71.9991 0 0 72 120 120)" width="30" xlink:href="#svg_68"/>
+     <use height="20" id="svg_71" transform="matrix(-12.33562 -20.5871 20.58684 -12.33577 240.3 48)" width="30" xlink:href="#svg_68"/>
+     <use height="20" id="svg_70" transform="matrix(-3.38573 -23.75998 23.75968 -3.38578 288 95.8)" width="30" xlink:href="#svg_68"/>
+     <use height="20" id="svg_69" transform="matrix(6.5991 -23.0749 23.0746 6.59919 288 168)" width="30" xlink:href="#svg_68"/>
+     <use height="20" id="svg_67" transform="matrix(14.9991 -18.73557 18.73533 14.99929 240 216)" width="30" xlink:href="#svg_68"/>
+    </symbol>
+   </defs>
+   <g class="layer" id="svg_18">
+    <title>Layer 1</title>
+    <g id="svg_59">
+     <use id="svg_65" transform="matrix(0.995313 0 0 0.995313 0 0)" x="1" xlink:href="#svg_66" y="-1"/>
+     <g id="svg_60" opacity="0.2">
+      <g class="layer" id="svg_61">
+       <title>Layer 1</title>
+       <path d="m4,162.69l413.79,0l0,154.66l-413.79,0l0,-154.66z" fill="#d52b1e" id="svg_64" opacity="0.95"/>
+       <path d="m4,8l413.79,0l0,154.69l-413.79,0l0,-154.69z" fill="#0d0d0d" id="svg_63"/>
+       <path d="m4,111.11l413.79,0l0,103.14l-413.79,0l0,-103.14z" fill="#ffffff" id="svg_62"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_176" stroke="#000000" stroke-width="0" text-anchor="middle" x="618.5" xml:space="preserve" y="116.83"/>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_177" stroke="#000000" stroke-width="0" text-anchor="middle" x="618.5" xml:space="preserve" y="116.83"/>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_178" stroke="#000000" stroke-width="0" text-anchor="middle" x="617.5" xml:space="preserve" y="116.83"/>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_179" stroke="#000000" stroke-width="0" text-anchor="middle" x="-366.5" xml:space="preserve" y="-45.17"/>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_180" stroke="#000000" stroke-width="0" text-anchor="middle" x="527.5" xml:space="preserve" y="509.33"/>
+  <text fill="#bfbfbf" font-family="Serif" font-size="24" id="svg_181" stroke="#000000" stroke-width="0" text-anchor="middle" x="371.5" xml:space="preserve" y="557.33"/>
+  <use id="svg_75" transform="matrix(0.108973 0 0 0.111722 15.2539 33.1584)" x="-58.11" xlink:href="#svg_74" y="-162.18">中巴亲善</use>
+ </g>
+</svg>
