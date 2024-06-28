@@ -1,1 +1,2 @@
-declare module 'midi.js';
+declare module 'midiplayer';
+declare module 'midifile';
