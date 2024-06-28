@@ -3,7 +3,9 @@
     By
     <a href="https://github.com/louiesun/" target="_blank" title="Author"
       >louiesun</a>
-    | Copyright © 2024-{{ date }} | GPLv3&GFDL License | <a href="https://github.com/louiesun/louiesun.github.io" target="_blank" title="SourceCode"
+    | Copyright © 2024-{{ date }} | GPLv3&GFDL License 
+    <br/>
+     <a href="https://github.com/louiesun/louiesun.github.io" target="_blank" title="SourceCode"
       >源码</a>就是我的备案
   </footer>
 </template>
@@ -13,9 +15,9 @@ const date = new Date().getFullYear();
 <style scoped>
 footer {
   text-align: center;
-  position: absolute;
+  position: flex;
   width: 100%;
-  bottom: 20px;
+  bottom: 0px;
   padding: 0 20px;
   background: var(--vp-c-bg);
   color: var(--vp-c-text);
