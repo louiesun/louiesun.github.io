@@ -5,6 +5,8 @@ import mathjax3 from "markdown-it-mathjax3";
 import multimd_table_plugin from "markdown-it-multimd-table";
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 import { imgSize } from "@mdit/plugin-img-size";
+import { VitePWA } from 'vite-plugin-pwa';
+
 
 
 const customElements = [
@@ -105,8 +107,8 @@ async function config() {
         "link",
         {
           rel: "icon",
-          type: "image/png",
-          href: "/avator.png",
+          type: "image/svg",
+          href: "/avator.svg",
         },
       ],
       [
@@ -135,8 +137,8 @@ async function config() {
     lastUpdated: false,
     themeConfig: {
       // repo: "clark-cui/homeSite",
-      logo: "/avator.png",
-      avator: "/avator.png",
+      logo: "/avator.svg",
+      avator: "/avator.svg",
       search: {
         provider: "local",
       },
@@ -209,7 +211,31 @@ async function config() {
         AutoSidebar({
           path: '/',
           collapsed: true,
-        })
+        }),
+        VitePWA({
+          injectRegister: 'auto',
+          registerType: 'autoUpdate',
+          devOptions: {
+              enabled: true
+          },
+          includeAssets: ['avator.svg'],
+          manifest: {
+              name: 'Louiesun\'s Blog',
+              short_name: "louiesun",
+              theme_color: "#83da7b",
+              start_url: "./",
+              display: "standalone",
+              background_color: "#eff0ef",
+              icons: [
+                  {
+                      src: "avator.svg",
+                      sizes: "16x16 32x32 48x48 64x64 128x128 256x256 512x512",
+                      type: "image/svg+xml",
+                      purpose: "any",
+                  },
+              ],
+          },
+      })
       ]
     },
   };

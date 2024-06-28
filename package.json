@@ -19,6 +19,7 @@
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-multimd-table": "^4.2.3",
     "shiki": "^1.6.1",
+    "vite-plugin-pwa": "^0.20.0",
     "vitepress": "1.2.2"
   },
   "scripts": {
