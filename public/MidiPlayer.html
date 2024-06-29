@@ -7,8 +7,8 @@
 	<title>MIDI Player</title>
 </head>
 
-<body style="background:#CCCCCC;font-family:sans-serif">
-	<canvas id="zl_canvas" style="display:block;margin:0 auto 20px;border:2px solid black"
+<body style="background:#CCCCCC;font-family:sans-serif;margin:0 0 0 0;padding:0 0 0 0;width: 960px;height:320px">
+	<canvas id="zl_canvas" style="display:block;margin:0 0 0 0; padding:0 0 0 0; border:none;"
 		oncontextmenu="event.preventDefault()" width="1" height="320"></canvas>
 </body>
 <script type='text/javascript'>
@@ -29,8 +29,7 @@
 			ZL.canvas.outerHTML = '<div style="text-align:center;background-color:#FFF;color:#000;padding:1.5em;width:540px;margin:2em auto">' + L(code) + '<br><br>(' + msg + ')</div>';
 		},
 	};
-	function sayHello()
-	{
+	function sayHello() {
 		return document.getElementById('zl_canvas').width;
 	}
 	function LoadMidi(filename, contents) {
