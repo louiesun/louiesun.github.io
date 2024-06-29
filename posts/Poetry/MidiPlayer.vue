@@ -1,12 +1,15 @@
 <template>
     <div id="Player">
-        
-        <button @click="PlayMidi()"><h2>Play {{ SongTitle }}</h2></button>
+
+        <button @click="PlayMidi()">
+            <h2>Play {{ SongTitle }}</h2>
+        </button>
         <div class="box">
             <iframe :key="MD5SongTitle" src="/MidiPlayer.html" class="midiPlayer" :id="MD5SongTitle"></iframe>
         </div>
-        <button @click="Change6MB()">Use TimGM6mb-MuseScore.sf2</button>
         <!--
+        <button @click="Change6MB()">Use TimGM6mb-MuseScore.sf2</button>
+        
         <button @click="UseLocalSF()">Use a local SoundFont</button>
         -->
     </div>
@@ -17,6 +20,7 @@
     background-color: #39c5bc4f;
     text-align: center;
 }
+
 #Player button {
     padding: 5px 10px;
     background-color: #39c5bb;
@@ -25,9 +29,10 @@
     border-radius: 3px;
     cursor: pointer;
     bottom: 0;
-    display:block;
+    display: block;
     margin: auto;
 }
+
 .box {
     width: 500px;
     height: 180px;
@@ -52,41 +57,39 @@ export default {
         const MidiUrl = ref(props.MidiUrl);
         const SongTitle = ref(props.SongTitle);
         const MD5SongTitle = ref(Md5.hashStr(SongTitle.value));
-        function relative2absolute(url: string, base: string) {
-            if (!base) {
-                base = location.protocol + location.host;
-            }
-            return new URL(url, base).href;
+        
+        function GetPublicUrl(url: SVGStringList) {
+            return location.protocol + "//" + location.host + url;
         }
+
         function PlayMidi() {
-            fetch(relative2absolute(MidiUrl.value, location.href))
+            //alert(GetPublicUrl(MidiUrl.value));
+            fetch(GetPublicUrl(MidiUrl.value))
                 .then(response => response.arrayBuffer())
                 .then(arrayBuffer => {
                     var ifm = document.getElementById(MD5SongTitle.value);
                     var MIDIINT8 = new Int8Array(arrayBuffer);
                     console.log(MIDIINT8);
+                    try {
+                        //ifm.contentWindow.sayHello()
+                        if (ifm.contentWindow.sayHello() != 960) {
+                            alert("Please wait for the MIDI player to load.");
+                            return;
+                        }
+                    }
+                    catch (e) {
+                        alert("Please wait for the MIDI player to load.");
+                        return;
+                    }
+
                     ifm.contentWindow.LoadMidi(SongTitle.value, MIDIINT8);
                 });
         }
-
-        function Change6MB() {
-            fetch(relative2absolute("/TimGM6mb-MuseScore.sf2", location.href))
-                .then(response => response.arrayBuffer())
-                .then(arrayBuffer => {
-                    var ifm = document.getElementById(MD5SongTitle.value);
-                    var SoundFontInt8 = new Int8Array(arrayBuffer);
-                    console.log(SoundFontInt8);
-                    ifm.LoadSoundFont.LoadMidi("TimGM6mb-MuseScore.sf2", SoundFontInt8);
-                });
-        }
-
-
         return {
             MidiUrl,
             SongTitle,
             MD5SongTitle,
             PlayMidi,
-            Change6MB,
         };
     },
     props: {

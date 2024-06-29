@@ -211,31 +211,7 @@ async function config() {
         AutoSidebar({
           path: '/',
           collapsed: true,
-        }),
-        VitePWA({
-          injectRegister: 'auto',
-          registerType: 'autoUpdate',
-          devOptions: {
-              enabled: true
-          },
-          includeAssets: ['avator.svg'],
-          manifest: {
-              name: 'Louiesun\'s Blog',
-              short_name: "louiesun",
-              theme_color: "#83da7b",
-              start_url: "./",
-              display: "standalone",
-              background_color: "#eff0ef",
-              icons: [
-                  {
-                      src: "avator.svg",
-                      sizes: "16x16 32x32 48x48 64x64 128x128 256x256 512x512",
-                      type: "image/svg+xml",
-                      purpose: "any",
-                  },
-              ],
-          },
-      })
+        })
       ]
     },
   };
