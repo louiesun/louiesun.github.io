@@ -4,12 +4,15 @@
             <h3>Play {{ SongTitle }}</h3>
         </button>
         <div class="box">
-            <iframe :key="MD5SongTitle" src="/MidiPlayer.html" @load="FrameReady()" class="midiPlayer"
-                scrolling="no" :id="MD5SongTitle"></iframe>
+            <iframe :key="MD5SongTitle" src="/MidiPlayer.html" @load="FrameReady()" class="midiPlayer" scrolling="no"
+                :id="MD5SongTitle"></iframe>
         </div>
-        <button @click="Change6MB()">Use TimGM6mb-MuseScore.sf2</button>
-        <input type="file" accept=".sf2" style="display:none" id="SFfile" @change="getSFdata()" />
-        <button @click="UseLocalSF()">Use a local SoundFont</button>
+        <div class="buttons">
+            <button @click="Change6MB()">Use TimGM6mb-MuseScore.sf2</button>
+            <input type="file" accept=".sf2" style="display:none" id="SFfile" @change="getSFdata()" />
+            <button @click="UseLocalSF()">Use a local SoundFont</button>
+            <button @click="FrameReload()">Reload if error. </button>
+        </div>
     </div>
 </template>
 <script lang="ts">
@@ -24,6 +27,7 @@ export default {
         const IFRAMEscale = ref(1);
         const IFRAMEmarginright = ref(0);
         const IFRAMEmarginbottom = ref(0);
+        var CurrentSF2 = "none";
         window.addEventListener("resize", AdjustSize);
         var IFRAMEokay = false;
         function FrameReady() {
@@ -67,18 +71,21 @@ export default {
             reader.onload = function (e) {
                 alert("File loaded!");
                 var data: ArrayBuffer = e.target.result;
-                var SFINT8 = new Int8Array(data);
+                var SFINT8 = new Int8Array(data)
                 var ifm = document.getElementById(MD5SongTitle.value);
                 if (!IFRAMEokay) {
                     alert("Please wait for the MIDI player to load. ");
                     return -1;
                 }
+                ifm.contentWindow.location.reload(true);
                 //console.log(SFINT8);
-                ifm.contentWindow.LoadSoundFont(inputFile.name, SFINT8);
+                ifm.onload = function () {
+                    CurrentSF2 = "ToLoad";
+                    ifm.contentWindow.LoadSoundFont(inputFile.name, SFINT8);
+                    ifm.onload = FrameReady;
+                }
             };
             reader.readAsArrayBuffer(inputFile);
-
-
         }
         function Change6MB() {
             var ifm = document.getElementById(MD5SongTitle.value);
@@ -98,7 +105,14 @@ export default {
                         alert("Please wait for the MIDI player to load. ");
                         return -1;
                     }
-                    ifm.contentWindow.LoadSoundFont("TimGM6mb-MuseScore.sf2", SFINT8);
+                    ifm.contentWindow.location.reload(true);
+                    //console.log(SFINT8);
+                    ifm.onload = function () {
+                        CurrentSF2 = "6MB";
+                        ifm.contentWindow.LoadSoundFont("TimGM6mb-MuseScore.sf2", SFINT8);
+                        ifm.onload = FrameReady;
+                    }
+
                 });
         }
         function PlayMidi() {
@@ -116,6 +130,17 @@ export default {
                     ifm.contentWindow.LoadMidi(SongTitle.value, MIDIINT8);
                 });
         }
+        function FrameReload() {
+            if (CurrentSF2 == "ToLoad")
+                getSFdata();
+            else if (CurrentSF2 == "6MB")
+                Change6MB();
+            else if (CurrentSF2 == "none") {
+                var ifm = document.getElementById(MD5SongTitle.value);
+                ifm.contentWindow.location.reload(true);
+            }
+
+        }
         return {
             MidiUrl,
             SongTitle,
@@ -128,6 +153,7 @@ export default {
             getSFdata,
             PlayMidi,
             FrameReady,
+            FrameReload,
         };
     },
     props: {
@@ -155,6 +181,9 @@ export default {
     margin-bottom: 2px;
     margin-left: 5px;
     margin-right: 5px;
+}
+.butttons {
+    
 }
 
 #Player button {
