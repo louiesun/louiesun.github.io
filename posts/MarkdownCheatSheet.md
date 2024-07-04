@@ -21,6 +21,8 @@ tags:
 - *倾斜* - `*倾斜*`
 - ~~删除线~~ - `~~删除线~~`
 - `Code 标记` - `` `Code 标记` ``
+- ++下划线++ - `++下划线++`
+- ==高亮== - `==高亮==`
 - [超级链接](https://ld246.com) - `[超级链接](https://ld246.com)`
 - [username@gmail.com](mailto:username@gmail.com) - `[username@gmail.com](mailto:username@gmail.com)`
 
@@ -253,11 +255,9 @@ gantt
     还有其他行级排版语法，比如**加粗**和[链接](https://b3log.org)。
 ```
 
-<!--
 
 [^bignote]: 脚注定义可使用多段内容。
 
 [^1]: 第一个脚注定义。
--->
 
 

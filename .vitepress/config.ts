@@ -5,97 +5,10 @@ import mathjax3 from "markdown-it-mathjax3";
 import multimd_table_plugin from "markdown-it-multimd-table";
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 import { imgSize } from "@mdit/plugin-img-size";
-import { VitePWA } from 'vite-plugin-pwa';
-
-
-
-const customElements = [
-  'math',
-  'maction',
-  'maligngroup',
-  'malignmark',
-  'menclose',
-  'merror',
-  'mfenced',
-  'mfrac',
-  'mi',
-  'mlongdiv',
-  'mmultiscripts',
-  'mn',
-  'mo',
-  'mover',
-  'mpadded',
-  'mphantom',
-  'mroot',
-  'mrow',
-  'ms',
-  'mscarries',
-  'mscarry',
-  'mscarries',
-  'msgroup',
-  'mstack',
-  'mlongdiv',
-  'msline',
-  'mstack',
-  'mspace',
-  'msqrt',
-  'msrow',
-  'mstack',
-  'mstack',
-  'mstyle',
-  'msub',
-  'msup',
-  'msubsup',
-  'mtable',
-  'mtd',
-  'mtext',
-  'mtr',
-  'munder',
-  'munderover',
-  'semantics',
-  'math',
-  'mi',
-  'mn',
-  'mo',
-  'ms',
-  'mspace',
-  'mtext',
-  'menclose',
-  'merror',
-  'mfenced',
-  'mfrac',
-  'mpadded',
-  'mphantom',
-  'mroot',
-  'mrow',
-  'msqrt',
-  'mstyle',
-  'mmultiscripts',
-  'mover',
-  'mprescripts',
-  'msub',
-  'msubsup',
-  'msup',
-  'munder',
-  'munderover',
-  'none',
-  'maligngroup',
-  'malignmark',
-  'mtable',
-  'mtd',
-  'mtr',
-  'mlongdiv',
-  'mscarries',
-  'mscarry',
-  'msgroup',
-  'msline',
-  'msrow',
-  'mstack',
-  'maction',
-  'semantics',
-  'annotation',
-  'annotation-xml'
-];
+import { footnote } from "@mdit/plugin-footnote";
+import { tasklist } from "@mdit/plugin-tasklist";
+import { ins } from '@mdit/plugin-ins'
+import { mark } from '@mdit/plugin-mark'
 
 async function config() {
   return {
@@ -196,12 +109,15 @@ async function config() {
         });
         md.use(mathjax3);
         md.use(imgSize);
+        md.use(footnote);
+        md.use(tasklist);
+        md.use(ins);
+        md.use(mark);
       }
     },
     vue: {
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => customElements.includes(tag)
         }
       }
     },
