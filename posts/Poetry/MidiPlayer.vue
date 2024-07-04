@@ -12,7 +12,7 @@
             <input type="file" accept=".sf2" style="display:none" id="SFfile" @change="getSFdata()" />
             <button @click="UseLocalSF()">Use a local SoundFont</button>
             <button @click="FrameReload()">Reload if error. </button>
-            <p><font color="red">请注意：由于这玩意全是bug，如果发现问题请在新标签页打开或从首页重新进入。</font> </p>
+            <p><font color="red">请注意：由于这玩意全是bug，如果发现问题请在新标签页打开并（从首页重新进入或在菜单切到另一个页面再切回来）。</font> </p>
         </div>
     </div>
 </template>
