@@ -1,6 +1,7 @@
 ---
-title: 安卓配置帮助
+title: 安卓使用指南
 ---
+
 # 安卓使用指南
 
 ***本指南极其复杂，在决定踏上这条路前请三思！***
@@ -161,4 +162,3 @@ chrome://version/
 
 本文档按照[GFDL](https://www.gnu.org/licenses/fdl-1.3.html#license-text)提供。
 
-返回[首页](./index.html)

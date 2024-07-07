@@ -1,11 +1,11 @@
 ---
-title: 命令行参数帮助及穿墙提示
+title: 帮助
 ---
 # 访问更多域名（非专业人员）
 
 如果你是从github直接下载的release，exe同级目录下应该提供了`DragTheDomainConfigFileHere.bat`。
 
-这会使用一个我自用的配置文件，也就是同目录下的`DOMAINconfig.txt`。这样可以访问更多网站，然后你可以试试走[跳转](./jumper.html)，注意其对地址极其敏感。
+这会使用一个我自用的配置文件，也就是同目录下的`DOMAINconfig.txt`。这样可以访问更多网站，注意其对地址极其敏感。
 
 对于该文件`DOMAINconfig.txt`的编辑，请往下翻。
 
@@ -79,7 +79,7 @@ www.pixiv.net
 
 显示Android开启设置文本。
 
-见[Android设置帮助](./android.html)
+见Android设置帮助。
 
 # 域名添加与访问指南
 
@@ -185,7 +185,3 @@ NETWORK_SWITCH(kHttp2EndStreamWithDataFrame, "http2-end-stream-with-data-frame")
 有问题请加Github issue。
 
 本文档除引用的Chromium源码外部分按照[GFDL](https://www.gnu.org/licenses/fdl-1.3.html#license-text)提供。
-
----
-
-返回[首页](./index.html)
