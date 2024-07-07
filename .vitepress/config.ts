@@ -46,9 +46,7 @@ async function config() {
         },
       ],
     ],
-    sitemap: {
-      hostname: 'https://louiesun.github.io',
-    },
+
     // cleanUrls: "with-subfolders",
     lastUpdated: false,
     themeConfig: {
