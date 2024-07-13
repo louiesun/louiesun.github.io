@@ -75,9 +75,13 @@ www.pixiv.net
 
 页面将显示打开此次程序的浏览器命令行参数。
 
+提供一个基于web的生成器，见[此](../Unofficial_Z_Access/WebGenerator)
+
 ### `-a`
 
 显示Android开启设置文本。
+
+提供一个基于web的生成器，见[此](../Unofficial_Z_Access/WebGenerator)
 
 见Android设置帮助。
 
