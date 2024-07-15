@@ -1,7 +1,6 @@
 ---
 title: Unofficial_Z_Access使用指南
 ---
-
 ## 使用原因
 
 你有没有想上[Zlibrary](https://singlelogin.re)或者[Anna'sArchive](https://annas-archive.se)找一些书或者文献，但是突然发现网站上不去的时候？
@@ -24,7 +23,19 @@ title: Unofficial_Z_Access使用指南
 
 所以，就有了软件下载连接：
 
-### [下载链接](https://github.com/louiesun/Unofficial_Z_Access/releases)
+### 下载链接
+
+[Github Releases](https://github.com/louiesun/Unofficial_Z_Access/releases/download/V9/dist.zip)（最新版本，推荐，无密码）
+
+[百度网盘](https://pan.baidu.com/s/1s7jD2Qz19aXw-SiMf12fGA?pwd=spgt)（网友自行上传，不保证最新及安全性，提取码`spgt`，压缩包密码密码：`8964`）
+
+[坚果云](https://www.jianguoyun.com/p/DSZGT-IQi5DCCRiZ_dkFIAA)（网友自行上传，不保证最新及安全性，压缩包密码密码：`8964`）
+
+## 使用演示
+
+没有演示，会解压就行。
+
+点开exe按着指示往下翻即可。
 
 ## 谁要你的破软件！
 
