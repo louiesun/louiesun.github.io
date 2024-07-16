@@ -267,7 +267,7 @@ chrome://version/
 #### 浏览器查询
 由于Whois365有的域名查不到，也可以浏览器查。
 
-先将dns换为Cloudflare DoH，打开[Chrome内置DNS查询](chrome://net-internals/#dns)
+先将dns换为Cloudflare DoH，打开[Chrome内置DNS查询](chrome://net-internals/#dns) `chrome://net-internals/#dns`
 
 输入，查询即可。再将得到的IP丢Whois365里查。
 
