@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#d00" height="600" id="svg_1" width="900" x="-0.22" y="0"/>
+  <g id="svg_9" transform="matrix(8.90772 0 0 8.90772 129.283 144.128)">
+   <circle cx="12.51" cy="9.4" fill="#fff" id="svg_2" r="15.5"/>
+   <use id="svg_8" transform="matrix(0.701142 0 0 0.701142 94.3649 35.6162)" x="-132.78" xlink:href="#svg_7" y="-51.87"/>
+  </g>
+ </g>
+ <defs>
+  <symbol height="32" id="svg_7" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+   <g class="layer" id="svg_3">
+    <title>Layer 1</title>
+    <g id="svg_4" transform="rotate(180 16 15.9535)">
+     <path d="m3.03,13l7.8,-7.8a5.24,5.24 0 0 0 5.01,-1.06l2.46,2.46l-3.94,3.94l17.25,17.25l-3.94,3.94l-17.25,-17.25l-2.96,2.96l-4.43,-4.43l0,-0.01zm0.49,8.38a16.38,16.38 0 0 0 11.83,5.05a10.96,10.96 0 0 0 10.96,-10.96a16.38,16.38 0 0 0 -10.47,-15.27a15.77,15.77 0 0 1 0,31.53a17.74,17.74 0 0 1 -14.76,-7.9l2.44,-2.44l0,-0.01zm-1.48,6.41l1.97,-1.97l1.97,1.97l-1.97,1.97l-1.97,-1.97z" id="svg_6"/>
+     <circle cx="2.53" cy="29.26" id="svg_5" r="2.46"/>
+    </g>
+   </g>
+  </symbol>
+ </defs>
+</svg>
