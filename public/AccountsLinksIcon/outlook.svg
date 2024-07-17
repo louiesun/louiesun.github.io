@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" enable-background="new 0 0 128 128" version="1.1" xml:space="preserve">
+ <style type="text/css">.st0{fill:#21A365;}
+	.st1{fill:#107C41;}
+	.st2{fill:#185B37;}
+	.st3{fill:#33C481;}
+	.st4{fill:#17864C;}
+	.st5{fill:#FFFFFF;}
+	.st6{fill:#036C70;}
+	.st7{fill:#1A9BA1;}
+	.st8{fill:#37C6D0;}
+	.st9{fill:#04878B;}
+	.st10{fill:#4F59CA;}
+	.st11{fill:#7B82EA;}
+	.st12{fill:#4C53BB;}
+	.st13{fill:#0F78D5;}
+	.st14{fill:#29A7EB;}
+	.st15{fill:#0358A8;}
+	.st16{fill:#0F79D6;}
+	.st17{fill:#038387;}
+	.st18{fill:#048A8E;}
+	.st19{fill:#C8421D;}
+	.st20{fill:#FF8F6A;}
+	.st21{fill:#ED6B47;}
+	.st22{fill:#891323;}
+	.st23{fill:#AF2131;}
+	.st24{fill:#C94E60;}
+	.st25{fill:#E08195;}
+	.st26{fill:#B42839;}
+	.st27{fill:#0464B8;}
+	.st28{fill:#0377D4;}
+	.st29{fill:#4FD8FF;}
+	.st30{fill:#1681D7;}
+	.st31{fill:#0178D4;}
+	.st32{fill:#042071;}
+	.st33{fill:#168FDE;}
+	.st34{fill:#CA64EA;}
+	.st35{fill:#7E1FAF;}
+	.st36{fill:#AE4BD5;}
+	.st37{fill:#9332BF;}
+	.st38{fill:#7719AA;}
+	.st39{fill:#0078D4;}
+	.st40{fill:#1490DF;}
+	.st41{fill:#0364B8;}
+	.st42{fill:#28A8EA;}
+	.st43{fill:#41A5ED;}
+	.st44{fill:#2C7BD5;}
+	.st45{fill:#195ABE;}
+	.st46{fill:#103E91;}
+	.st47{fill:#2166C3;}
+	.st48{opacity:0.2;}</style>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_19">
+   <g id="svg_1">
+    <path class="st27" d="m105.95,30.78l-66.57,0l0,-10.6c0,-1.78 1.39,-3.17 3.1,-3.17l60.3,0c1.78,0 3.17,1.39 3.17,3.17l0,10.6z" id="svg_2"/>
+    <rect class="st28" height="20.59" id="svg_3" width="22.21" x="39.38" y="30.78"/>
+    <rect class="st14" height="20.59" id="svg_4" width="22.21" x="61.6" y="30.78"/>
+    <rect class="st29" height="20.59" id="svg_5" width="22.21" x="83.81" y="30.78"/>
+    <rect class="st30" height="20.59" id="svg_6" width="22.21" x="39.38" y="51.37"/>
+    <rect class="st31" height="20.59" id="svg_7" width="22.21" x="61.6" y="51.37"/>
+    <rect class="st14" height="20.59" id="svg_8" width="22.21" x="83.81" y="51.37"/>
+    <rect class="st27" height="20.59" id="svg_9" width="22.21" x="61.6" y="71.88"/>
+    <rect class="st30" height="20.59" id="svg_10" width="22.21" x="83.81" y="71.88"/>
+   </g>
+   <path class="st32" d="m111.13,66.62l-5.11,3.02l0,-8.67l5.03,2.79c1.16,0.54 1.16,2.17 0.08,2.86z" id="svg_11"/>
+   <path class="st33" d="m111.13,66.62l-0.46,0.31l0,0l-0.54,0.31l-4.1,2.4l0,-0.08l-68.42,39.17l68.97,0c2.94,0 5.26,-2.4 5.26,-5.26l0.08,-38.24c0.08,0.46 -0.23,1.08 -0.77,1.39z" id="svg_12"/>
+   <g id="svg_13">
+    <path class="st14" d="m107.34,108.72l-69.04,0c-2.94,0 -5.26,-2.4 -5.26,-5.26l0,-37.31l74.31,42.57z" id="svg_14"/>
+   </g>
+   <path class="st30" d="m58.58,87.82l-41.02,0c-2.71,0 -4.95,-2.24 -4.95,-4.95l0,-40.4c0,-2.71 2.24,-4.95 4.95,-4.95l41.02,0c2.71,0 4.95,2.24 4.95,4.95l0,40.4c0,2.71 -2.17,4.95 -4.95,4.95z" id="svg_15"/>
+   <g id="svg_16">
+    <path class="st5" d="m38.07,77.3c-7.97,0 -13,-6.04 -13,-14.09c0,-8.51 5.5,-14.55 13.39,-14.55c8.2,0 13,6.11 13,14.01c0.08,9.37 -5.65,14.63 -13.39,14.63l0,0zm0.31,-4.02c4.95,0 7.74,-4.57 7.74,-10.37c0,-5.26 -2.63,-10.14 -7.74,-10.14s-7.82,4.8 -7.82,10.37s2.79,10.14 7.82,10.14l0,0z" id="svg_17"/>
+   </g>
+   <path class="st48" d="m63.61,42c0,0.15 0,0.31 0,0.46l0,40.4c0,2.71 -2.24,4.95 -4.95,4.95l-25.62,0l0,4.41l29.72,0c2.71,0 4.95,-2.24 4.95,-4.95l0,-40.4c0,-2.48 -1.78,-4.57 -4.1,-4.88z" id="svg_18"/>
+  </g>
+ </g>
+</svg>

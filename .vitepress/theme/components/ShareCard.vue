@@ -9,11 +9,20 @@
     <h1 class="title">My other Accounts. </h1>
     <div class="description">
       <div class="Links">
-        <a href="https://github.com/louiesun" target="_blank">
-          <img src="/AccountsLinksIcon/GithubIcon.svg" width="30" height="30" class="avator" />
+        <a href="mailto:louie.pingu@outlook.com" target="_blank">
+          <img src="/AccountsLinksIcon/outlook.svg" width="30" height="30" class="avator" />
+        </a>
+        <a href="mailto:louie.pingu@gmail.com" target="_blank">
+          <img src="/AccountsLinksIcon/gmail.svg" width="30" height="30" class="avator" />
         </a>
         <a href="https://liaoyuan1949.site/u/louiesun/summary" target="_blank">
           <img src="/AccountsLinksIcon/bu2021.svg" width="30" height="30" class="avator" />
+        </a>
+        <a href="https://github.com/louiesun" target="_blank">
+          <img src="/AccountsLinksIcon/GithubIcon.svg" width="30" height="30" class="avator" />
+        </a>
+        <a href="mailto:louiesun@yandex.com" target="_blank">
+          <img src="/AccountsLinksIcon/yandex.svg" width="30" height="30" class="avator" />
         </a>
       </div>
     </div>

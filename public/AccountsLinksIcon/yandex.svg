@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <title>Yandex mail logo</title>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="svg_8">
+   <g id="svg_6">
+    <path d="m12.78,20.37l55.6,0l0,41.7l-55.6,0l0,-41.7z" fill="#fc0" id="svg_1"/>
+    <path d="m12.78,20.37l0,2.78l27.81,26.41l27.81,-26.41l0,-2.78l-55.61,0.01z" id="svg_2" opacity="0.08"/>
+   </g>
+   <path d="m12.87,20.2l27.81,18.07l27.81,-18.07l-55.61,0.01z" fill="#d00" id="svg_3"/>
+  </g>
+ </g>
+</svg>
