@@ -120,6 +120,7 @@ async function config() {
         AutoSidebar({
           path: '/',
           collapsed: true,
+          titleFromFile: true,
         })
       ]
     },
