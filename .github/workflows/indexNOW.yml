@@ -2,7 +2,7 @@ name: "IndexNow"
 on:
   push:
     branches:
-    	# when git push to the master branch
+    # when git push to the master branch
       - master
   schedule:
     # scheduled in UTC.
