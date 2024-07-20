@@ -1,5 +1,5 @@
 ---
-title: Libgen
+title: 如何在国内直接访问Libgen官网
 ---
 ## 不想买VPN，想要访问Libgen？
 

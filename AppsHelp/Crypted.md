@@ -1,5 +1,5 @@
 ---
-title: Crypted使用指南
+title: Crypted使用指南及加密方法
 tags:
   - 帮助文档
 ---

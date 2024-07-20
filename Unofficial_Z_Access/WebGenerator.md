@@ -1,10 +1,9 @@
 ---
-title: WebGenerator
+title: Unofficial_Z_Access的WebGenerator
 date: 2024-07-08
 tags:
   - GFW
 ---
-
 # 这里提供一个基于web(js)的配置生成器
 
 <script setup>

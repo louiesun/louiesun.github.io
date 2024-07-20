@@ -1,5 +1,5 @@
 ---
-title: Unofficial_Z_Access帮助
+title: Unofficial_Z_Access帮助（命令行参数，Android设置，配置指南）
 ---
 ## 访问更多域名
 
@@ -90,6 +90,7 @@ www.pixiv.net
 给你的浏览器（比如说`chrome.exe`）传参打开即可。
 
 比如
+
 ```bash
 chrome.exe --host-resolver-rules="MAP zh.z-library.re [2606:4700:3033::ac43:aa46]:443,MAP bu2021.xyz [2606:4700:3033::6815:3e2]:443" -origin-to-force-quic-on=zh.z-library.se:443,bu2021.xyz:443 --host-rules="MAP libgen.rs 193.218.118.42,MAP zh.singlelogin.re 176.123.7.105,MAP singlelogin.re 176.123.7.105" --ignore-certificate-errors
 ```
@@ -265,6 +266,7 @@ chrome://version/
 以CloudFlare为例你可以到[这里](https://www.cloudflare-cn.com/ips/)寻找一个CloudFlareCDN的IP。并请确保ping得通。（一般可以）
 
 #### 浏览器查询
+
 由于Whois365有的域名查不到，也可以浏览器查。
 
 先将dns换为Cloudflare DoH，打开[Chrome内置DNS查询](chrome://net-internals/#dns) `chrome://net-internals/#dns`
@@ -283,11 +285,10 @@ chrome://version/
 
 **注意子域名[^1]也要。**
 
-[^1]: 比如说，`www.pixiv.net`和`pixiv.net`不一样，`z-library.se`和`zh.z-library.se`不一样。
-
 **如果还不行，那一般就是不行。**
 
 > 我这里收集了上述特殊情况：
+>
 > + Pornhub的IP是可以直连的，但是用HostRules实现的域前置使用了IP作为sni，而这个ip在黑名单里。
 > + Odysee的账号网址`odysee.tv`使用了Cloudfare CDN，无法域前置，但是手动关闭了QUIC。
 > + TorProject的域前置实现比较魔幻，有的时候会当成IP直连，甚至因服务器IP而异。
@@ -369,4 +370,7 @@ NETWORK_SWITCH(kHttp2EndStreamWithDataFrame, "http2-end-stream-with-data-frame")
 ## 有问题请加Github issue。
 
 ## 版权声明
+
 本文档除引用的Chromium源码外部分按照[GFDL](https://www.gnu.org/licenses/fdl-1.3.html#license-text)提供。
+
+[^1]: 比如说，`www.pixiv.net`和`pixiv.net`不一样，`z-library.se`和`zh.z-library.se`不一样。
