@@ -1,5 +1,6 @@
 ## About
-louiesun'a blog powered by [vitepress-blog-zaun](https://github.com/clark-cui/vitepress-blog-zaun)
+
+[louiesun'a blog](https://louiesun.github.io) powered by [vitepress-blog-zaun](https://github.com/clark-cui/vitepress-blog-zaun)
 
 ## Start
 
@@ -15,4 +16,4 @@ pnpm run build
 pnpm run serve
 ```
 
-And it will automatically build with github actions when pushed. 
+And it will automatically build with github actions when pushed.
