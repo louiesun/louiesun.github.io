@@ -3,6 +3,9 @@
         <button @click="PlayMidi()">
             <h3>Play {{ SongTitle }}</h3>
         </button>
+        <button @click="DownloadMidi()">
+            <h6>Download {{ SongTitle }}</h6>
+        </button>
         <div class="box">
             <iframe :key="MD5SongTitle" src="/MidiPlayer.html" @load="FrameReady()" class="midiPlayer" scrolling="no"
                 :id="MD5SongTitle"></iframe>
@@ -116,6 +119,13 @@ export default {
 
                 });
         }
+        function DownloadMidi() {
+            var DownloadUrl=GetPublicUrl(MidiUrl.value);
+            var a = document.createElement("a");
+            a.href = DownloadUrl;
+            a.download = SongTitle.value + ".mid";
+            a.click();
+        }
         function PlayMidi() {
             //alert(GetPublicUrl(MidiUrl.value));
             fetch(GetPublicUrl(MidiUrl.value))
@@ -153,6 +163,7 @@ export default {
             Change6MB,
             getSFdata,
             PlayMidi,
+            DownloadMidi,
             FrameReady,
             FrameReload,
         };
