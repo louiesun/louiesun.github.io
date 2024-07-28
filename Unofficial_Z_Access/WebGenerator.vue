@@ -102,6 +102,11 @@ function ProcessConfig()
 				d=d.slice(1);
 				HostLine=HostLine+"MAP "+d+" "+IP+",";
 			}
+            else if(d[0]=="-")
+			{
+				d=d.slice(1);
+				HostResolverLine=HostResolverLine+"MAP "+d+" "+IP+":443,";
+			}
 			else
 			{
 				HostResolverLine=HostResolverLine+"MAP "+d+" "+IP+":443,";
