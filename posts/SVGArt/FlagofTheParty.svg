@@ -2,11 +2,9 @@
 <svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  <g class="layer">
   <title>Layer 1</title>
-  <rect fill="#d00" height="600" id="svg_1" width="900" x="-0.22" y="0"/>
-  <g id="svg_9" transform="matrix(8.90772 0 0 8.90772 129.283 144.128)">
-   <circle cx="12.51" cy="9.4" fill="#fff" id="svg_2" r="15.5"/>
-   <use id="svg_8" transform="matrix(0.701142 0 0 0.701142 94.3649 35.6162)" x="-132.78" xlink:href="#svg_7" y="-51.87"/>
-  </g>
+  <rect fill="#d00" height="600" id="svg_1" transform="matrix(1 0 0 1 0 0)" width="900" x="-0.22" y="0"/>
+  <circle cx="12.51" cy="9.4" fill="#fff" id="svg_2" r="15.5" transform="matrix(1 0 0 1 0 0) matrix(8.90772 0 0 8.90772 129.283 144.128)"/>
+  <use id="svg_8" transform="rotate(45.2085 238.5 239.996) matrix(6.24558 0 0 6.24558 969.859 461.387)" x="-133.26" xlink:href="#svg_7" y="-51.39"/>
  </g>
  <defs>
   <symbol height="32" id="svg_7" width="32" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
