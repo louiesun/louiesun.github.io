@@ -8,10 +8,24 @@
         <button @click="ReadConfig">Read config</button>
         <button @click="CopyInput">CopyInput</button>
         <button @click="CopyOutput">CopyOutput</button>
-        <textarea id="DOMAINconfig" rows="10" placeholder="在这里输入你的配置"></textarea>
+        <textarea id="DOMAINconfig" rows="10" placeholder="在这里输入你的配置">104.19.112.155
+cdn.croxy.network
+
+104.20.76.252
+^www.matrix.org
+^matrix.org
+^matrix-client.matrix.org
+
+143.244.204.138
+^www.croxy.network
+
+20.205.243.166
+^github.com</textarea>
         <textarea id="Output" rows="10" readonly placeholder="在左边输入你的配置，并点击下方按钮"></textarea>
         <button @click="CMDConfig">Command Line Switches</button>
         <button @click="AndroidConfig">Android ADB echo</button>
+        <button @click="Bat4MSEDGE">Bat4MSEDGE(Win7)</button>
+        <button @click="Bat4MSEDGE">Bat4MSEDGE(Win10+)</button>
     </div>
 </template>
 <script lang="ts" setup>
@@ -142,6 +156,18 @@ function AndroidConfig()
 	AndroidLine=AndroidLine.replaceAll('"','\\"');
 	AndroidLine='echo "_'+" "+AndroidLine+'" > chrome-command-line';
     document.getElementById("Output").value = AndroidLine;
+}
+function Bat4MSEDGE()
+{
+    ProcessConfig();
+    let batfile='@echo off\ntaskkill /f /t /im msedge.exe\nstart "" "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe" '+CMDLine+'\n';
+    //download as bat file
+    let blob = new Blob([batfile], {type: 'text/plain'});
+    let url = URL.createObjectURL(blob);
+    let a = document.createElement('a');
+    a.href = url;
+    a.download = 'UZA_MSEDGE.bat';
+    a.click();
 }
 </script>
 <style scoped>
