@@ -9,7 +9,26 @@
         <button @click="CopyInput">CopyInput</button>
         <button @click="CopyOutput">CopyOutput</button>
         <textarea id="DOMAINconfig" rows="10" placeholder="在这里输入你的配置">104.19.112.155
+longlivemarxleninmaoism.online
+annas-archive.se
+zh.annas-archive.se
+
+114.250.70.34
+-www.recaptcha.net
+
+104.19.112.156
+odysee.com
+api.na-backend.odysee.com
+api.odysee.com
+
+104.19.113.157
+z-library.rs
+zh.z-library.rs
+reader.z-library.rs
+dlz1.fcdn.sk
 cdn.croxy.network
+apkmirror.com
+www.apkmirror.com
 
 104.20.76.252
 ^www.matrix.org
@@ -18,6 +37,13 @@ cdn.croxy.network
 
 143.244.204.138
 ^www.croxy.network
+
+193.218.118.42
+^libgen.rs
+
+176.123.7.105
+^zh.singlelogin.re
+^singlelogin.re
 
 20.205.243.166
 ^github.com</textarea>
