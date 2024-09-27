@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g class="layer">
+  <title>Layer 1</title>
+  <path d="m0,0l900,0l0,600l-900,0l0,-600z" fill="#ff0000" id="svg_1" transform="matrix(1 0 0 1 0 0)"/>
+  <g fill="#fff" id="a" transform="matrix(1 0 0 1 0 0)">
+   <path d="m354.98,291.32l-239.09,-291.32l83.37,0l155.72,291.32zl-88.38,-291.32l59.68,0l28.7,291.32zl28.69,-291.32l59.68,0l-88.37,291.32zl155.71,-291.32l83.37,0l-239.08,291.32zl354.97,-291.32l190.05,0l-545.02,291.32z" id="svg_2"/>
+   <path d="m338.74,300l561.26,-170.26l0,114.98l-561.26,55.28zm26.81,0l-365.55,-36l0,-74.89l365.55,110.89zl-365.55,-300l0,104.61l365.55,195.39z" id="svg_3"/>
+  </g>
+  <use fill="#fff" id="svg_4" transform="matrix(1 0 0 -1 0 600)" xlink:href="#a"/>
+  <circle cx="350" cy="300" fill="#ff0000" id="svg_5" r="150"/>
+  <use id="svg_13" transform="matrix(0.770134 0 0 0.770134 176.944 171.522)" xlink:href="#svg_12"/>
+ </g>
+ <defs>
+  <symbol height="600" id="svg_12" width="900" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <g class="layer">
+    <title>Layer 1</title>
+    <g id="svg_11" transform="translate(150,150) scale(3)">
+     <path d="m0,-30l17.63,54.27l-46.16,-33.54l57.06,0l-46.16,33.54" fill="#FF0" id="svg_7"/>
+    </g>
+    <use id="svg_10" transform="rotate(23.0362 301.121 57.3635) matrix(1 0 0 1 300 60)" xlink:href="#svg_7"/>
+    <use id="svg_9" transform="rotate(45.8699 362.056 118.005) matrix(1 0 0 1 360 120)" xlink:href="#svg_7"/>
+    <use id="svg_8" transform="rotate(69.9454 362.691 209.018) matrix(1 0 0 1 360 210)" xlink:href="#svg_7"/>
+    <use id="svg_6" transform="rotate(20.6598 301.011 267.319) matrix(1 0 0 1 300 270)" xlink:href="#svg_7"/>
+   </g>
+  </symbol>
+ </defs>
+</svg>
